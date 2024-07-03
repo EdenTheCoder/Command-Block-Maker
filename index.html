@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<h1>Edens Command Maker</h1>
+		<hr style="border: solid; border-radius: 10px; color: rgb(41, 177, 187)" />
+
+		<h2>Command:</h2>
+		<h3>
+			Dont Use This "
+			<br />
+			Use This instaed '
+		</h3>
+		<textarea name="Command_area" id="Command"></textarea>
+		<hr style="border: solid; border-radius: 10px; color: rgb(41, 177, 187)" />
+
+		<div id="Buttons">
+			<input
+				type="radio"
+				id="normal"
+				name="Command_Block_Type"
+				value="Impolse" />
+			<label for="Impolse">Impolse</label>
+			<br />
+
+			<input type="radio" id="Chain" name="Command_Block_Type" value="Chain" />
+			<label for="Chain">Chain</label>
+			<br />
+
+			<input
+				type="radio"
+				id="Repeat"
+				name="Command_Block_Type"
+				value="Repeat" />
+			<label for="Repeat">Repeat</label>
+			<br />
+			<hr
+				style="border: solid; border-radius: 10px; color: rgb(41, 177, 187)" />
+			<input type="checkbox" value="auto" id="auto" />
+			<label for="auto">auto</label>
+			<br />
+			<hr
+				style="border: solid; border-radius: 10px; color: rgb(41, 177, 187)" />
+			<button onclick="AddcomandBlock()">Add Command Block</button>
+			<br />
+			<hr
+				style="border: solid; border-radius: 10px; color: rgb(41, 177, 187)" />
+
+			<button onclick="GenCommand()">Gen Command</button>
+		</div>
+		<p id="output"></p>
+		<script src="index.js"></script>
+	</body>
+</html>

@@ -1,0 +1,37 @@
+body{
+    background: #303030;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+label{
+    font-size: 20px;
+}
+#Command{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+}
+button{
+    padding: 10px;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    border: solid red;
+    transition: 100ms;
+}
+button:active{
+    scale: 0.95;
+}
+hr{
+    width: 500px;
+}
+#output{
+    background: #4d4d4d;
+    padding: 20px;
+    font-size: 20px;
+    margin: auto;
+    margin-top: 10px;
+    border: solid black;
+    border-radius: 50px;
+    width: 75%;
+}

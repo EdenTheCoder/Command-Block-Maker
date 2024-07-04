@@ -7,20 +7,38 @@
 		<link rel="stylesheet" href="styles.css" />
 	</head>
 	<body>
-		<h1>Edens Command Maker</h1>
-		<hr style="border: solid; border-radius: 10px; color: rgb(41, 177, 187)" />
+		<div style="display: inline-flex; text-align: center">
+			<a href="https://edenthecoder.github.io/index.html" class="topBar">
+				home
+			</a>
+			<a href="https://edenthecoder.github.io/contact.html" class="topBar">
+				contact
+			</a>
+			<a href="https://edenthecoder.github.io/MyProjects.html" class="topBar">
+				Projects
+			</a>
+		</div>
+		<hr class="devidor" />
+		<h1 class="largeText">Edens Command Maker</h1>
+		<hr class="devidor" />
 
-		<h2>Command:</h2>
-		<h3>
+		<h2 class="normalText">Command:</h2>
+		<h3 class="smalltext" style="color: brown">
 			Dont Use This "
 			<br />
 			Use This instaed '
 		</h3>
-		<textarea name="Command_area" id="Command"></textarea>
-		<hr style="border: solid; border-radius: 10px; color: rgb(41, 177, 187)" />
+		<textarea
+			placeholder="Say Hello World"
+			name="Command_area"
+			id="Command"
+			class="smalltext"
+			style="color: black; text-align: left"></textarea>
+		<hr class="small-devidor" />
 
 		<div id="Buttons">
 			<input
+				checked="True"
 				type="radio"
 				id="normal"
 				name="Command_Block_Type"
@@ -39,17 +57,14 @@
 				value="Repeat" />
 			<label for="Repeat">Repeat</label>
 			<br />
-			<hr
-				style="border: solid; border-radius: 10px; color: rgb(41, 177, 187)" />
+			<hr class="small-devidor" />
 			<input type="checkbox" value="auto" id="auto" />
 			<label for="auto">auto</label>
 			<br />
-			<hr
-				style="border: solid; border-radius: 10px; color: rgb(41, 177, 187)" />
+			<hr class="devidor" />
 			<button onclick="AddcomandBlock()">Add Command Block</button>
 			<br />
-			<hr
-				style="border: solid; border-radius: 10px; color: rgb(41, 177, 187)" />
+			<div style="height: 50px"></div>
 
 			<button onclick="GenCommand()">Gen Command</button>
 		</div>

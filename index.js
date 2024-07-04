@@ -60,7 +60,7 @@ function GenCommand() {
 	}
 	console.log(FullCommand);
 	navigator.clipboard.writeText(FullCommand);
-	document.getElementById("output").innerHTML = FullCommand;
+	document.getElementById("output").innerText = FullCommand;
 	FullCommand =
 		"/summon minecraft:armor_stand ~ ~ ~ {Health:0,Passengers:[{}]}";
 	CarOfInPass = 59;

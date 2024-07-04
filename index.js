@@ -37,12 +37,13 @@ function GenCommand() {
 	console.log(Auto.length);
 	for (let i = 0; i < Auto.length; i++) {
 		console.log(Commands[i] + "|" + Types[i] + "|" + Auto[i]);
+		Commands[i] = Commands[i].replaceAll(`'`, `"`);
 		TempSTRtoAdd =
 			'id:"minecraft:falling_block",Time:1,BlockState:{Name:"' +
 			Types[i] +
-			'"},TileEntityData:{Command:"' +
+			`"},TileEntityData:{Command:'` +
 			Commands[i] +
-			'",auto:' +
+			`',auto:` +
 			Auto[i] +
 			"},Passengers:[{}]";
 		FullCommand =
@@ -58,6 +59,7 @@ function GenCommand() {
 		CarOfInPass = CarOfInPass + 49;
 	}
 	console.log(FullCommand);
+	navigator.clipboard.writeText(FullCommand);
 	document.getElementById("output").innerHTML = FullCommand;
 	FullCommand =
 		"/summon minecraft:armor_stand ~ ~ ~ {Health:0,Passengers:[{}]}";

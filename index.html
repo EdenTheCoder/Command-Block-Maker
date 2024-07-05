@@ -61,13 +61,35 @@
 			<input type="checkbox" value="auto" id="auto" />
 			<label for="auto">auto</label>
 			<br />
-			<hr class="devidor" />
+			<input type="checkbox" value="conditinal" id="cond" />
+			<label for="cond">conditinal</label>
+			<br />
+			<hr class="small-devidor">
+			<div style="text-align: center;">
+			<input type="radio" name="Dircation" id="DircationUp" checked="True"/><label for="Dircation1">Up</label> <br>
+			<input type="radio" name="Dircation" id="DircationDown" /><label for="Dircation1">Down</label> <br>
+			<input type="radio" name="Dircation" id="DircationNorth" /><label for="Dircation1">North</label> <br>
+			<input type="radio" name="Dircation" id="DircationSouth" /><label for="Dircation1">South</label> <br>
+			<input type="radio" name="Dircation" id="DircationEast" /><label for="Dircation1">East</label> <br>
+			<input type="radio" name="Dircation" id="DircationWest" /><label for="Dircation1">West</label>  <br>
+			
+		</div>
+		<hr class="devidor" />
 			<button onclick="AddcomandBlock()">Add Command Block</button>
 			<br />
 			<div style="height: 50px"></div>
-
+			<input
+				type="text"
+				value="redstone_block"
+				class="smalltext"
+				style="color: black; text-align: left"
+				id="Block" />
+			<br />
+			<button onclick="AddnormalBlock()">Add Normal Block</button>
+			<br />
+			<div style="height: 50px"></div>
 			<button onclick="GenCommand()">Gen Command</button>
-		</div>
+		
 		<p id="output"></p>
 		<script src="index.js"></script>
 	</body>
